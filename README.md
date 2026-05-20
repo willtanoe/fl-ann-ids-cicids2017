@@ -215,7 +215,7 @@ Tested on:
 - CPU: AMD Ryzen 7 5700X
 - GPU: NVIDIA RTX 3060 Ti (8GB VRAM)
 - RAM: 16GB
-- OS: Windows 11
+- OS: Ubuntu 24.04
 
 ---
 
