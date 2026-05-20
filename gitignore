@@ -1,0 +1,19 @@
+# Dataset — terlalu besar untuk GitHub (~1.9GB total)
+datasets/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Virtual environment
+venv/
+env/
+.env/
