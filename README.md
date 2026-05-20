@@ -219,8 +219,19 @@ Tested on:
 
 ---
 
-## Reference
+## Academic Context
 
-This implementation is based on the following paper (unpublished, academic coursework):
+This repository contains the simulation source code and experimental setup for the mid-term project (UTS) of the Advanced Network Security course. The experimental results generated from this codebase are documented in the following unpublished manuscript:
 
-> Muhamad Wildan Rizky, "Federated Learning-Based Network Intrusion Detection System Using Artificial Neural Network on CIC-IDS2017 Dataset," Advanced Network Security, Master of Electrical Engineering, Telkom University, 2026.
+> Muhamad Wildan Rizky, "Federated Learning-Based Network Intrusion Detection System Using Artificial Neural Network on CIC-IDS2017 Dataset," Master of Electrical Engineering, Telkom University, 2026.
+
+---
+
+## References
+
+The theoretical foundation, dataset, and frameworks used in this simulation are based on the following works:
+
+1. B. McMahan, E. Moore, D. Ramage, S. Hampson, and B. A. y Arcas, "Communication-Efficient Learning of Deep Networks from Decentralized Data," in Proc. 20th Int. Conf. Artificial Intelligence and Statistics (AISTATS), 2017.
+2. T. Li, A. K. Sahu, M. Zaheer, M. Sanjabi, A. Smola, and V. Smith, "Federated Optimization in Heterogeneous Networks," in Proc. Machine Learning and Systems (MLSys), 2020.
+3. I. Sharafaldin, A. H. Lashkari, and A. A. Ghorbani, "Toward Generating a New Intrusion Detection Dataset and Intrusion Traffic Characterization," in Proc. 4th Int. Conf. Information Systems Security and Privacy (ICISSP), 2018.
+4. D. J. Beutel, T. Topal, A. Mathur, X. Qiu, T. Parcollet, P. P. B. de Gusmao, and N. D. Lane, "Flower: A Friendly Federated Learning Research Framework," arXiv preprint arXiv:2007.14390, 2020.
