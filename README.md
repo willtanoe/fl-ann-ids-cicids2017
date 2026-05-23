@@ -30,7 +30,20 @@ Implementation of a Federated Learning (FL) IDS using the Flower (flwr) framewor
 
 ### FedAvg vs FedProx
 
-FedAvg is discussed as a baseline, but only FedProx results are reported in this run to keep the repo consistent with the latest notebooks.
+Note: FedAvg results below are from a previous run (not in the latest notebooks). FedProx results match the current notebooks.
+
+| Class | FedAvg F1 | FedProx F1 |
+|---|---|---|
+| BENIGN | 0.9403 | 0.9728 |
+| DDoS | 0.9148 | 0.7993 |
+| DoS Hulk | 0.6165 | 0.7817 |
+| DoS Slowhttptest | 0.0000 | 0.7947 |
+| DoS slowloris | 0.1705 | 0.6001 |
+| PortScan | 0.9644 | 0.9865 |
+| Web Attack | 0.1197 | 0.6274 |
+| **Macro F1** | **0.3548** | **0.5735** |
+
+FedProx improves macro F1 by **61.5%** over FedAvg. The most significant gains are on DoS Slowhttptest and Web Attack, both of which were entirely undetected by FedAvg.
 
 ### Confusion Matrix
 
@@ -193,7 +206,7 @@ pip install -r requirements.txt
 - Standalone per-node models achieve macro F1 of 0.8390–0.9924 on local classes but are entirely blind to attack classes from other nodes.
 - The global FL model detects 8 of 11 attack classes from a single model — cross-domain generalization that no standalone model can replicate.
 - Bot, FTP-Patator, and SSH-Patator score F1=0.0000 in the global model, confirming the **knowledge dilution** phenomenon under extreme Non-IID: discriminative features for node-exclusive minority classes are washed out during weight aggregation.
-- FedAvg is discussed as a baseline, but only FedProx results are reported in this run to keep the repo consistent with the latest notebooks.
+- FedAvg results below are from a previous run (not in the latest notebooks). FedProx results match the current notebooks.
 
 ---
 
