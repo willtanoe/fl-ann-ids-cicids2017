@@ -206,8 +206,6 @@ pip install -r requirements.txt
 - Standalone per-node models achieve macro F1 of 0.8390–0.9924 on local classes but are entirely blind to attack classes from other nodes.
 - The global FL model detects 8 of 11 attack classes from a single model — cross-domain generalization that no standalone model can replicate.
 - Bot, FTP-Patator, and SSH-Patator score F1=0.0000 in the global model, confirming the **knowledge dilution** phenomenon under extreme Non-IID: discriminative features for node-exclusive minority classes are washed out during weight aggregation.
-- FedAvg results below are from a previous run (not in the latest notebooks). FedProx results match the current notebooks.
-
 ---
 
 ## Hardware
