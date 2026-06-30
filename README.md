@@ -43,7 +43,7 @@ Note: The 0.5735 Macro F1 was obtained from an earlier comparison experiment bet
 | Web Attack | 0.1197 | 0.6274 |
 | **Macro F1** | **0.3548** | **0.5735** |
 
-FedProx improves macro F1 by **61.5%** over FedAvg. The most significant gains are on DoS Slowhttptest and Web Attack, both of which were entirely undetected by FedAvg.
+In an earlier comparison experiment, FedProx improved Macro F1 by 61.5% over the FedAvg baseline, with the largest gains observed on minority attack classes such as DoS Slowhttptest and Web Attack.
 
 ### Confusion Matrix
 
