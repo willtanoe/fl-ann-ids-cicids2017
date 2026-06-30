@@ -30,7 +30,7 @@ Implementation of a Federated Learning (FL) IDS using the Flower (flwr) framewor
 
 ### FedAvg vs FedProx
 
-Note: FedAvg results below are from a previous run (not in the latest notebooks). FedProx results match the current notebooks.
+Note: The 0.5735 Macro F1 was obtained from an earlier comparison experiment between FedAvg and FedProx. The current repository implementation and latest notebooks produce a Macro F1 of 0.5471.
 
 | Class | FedAvg F1 | FedProx F1 |
 |---|---|---|
@@ -146,7 +146,7 @@ Steps applied in `01_explorasi_data.ipynb`:
 - Per-node `StandardScaler` fitted only on training data to prevent data leakage
 - Output: per-node `nodeN_X_train.npy`, `nodeN_X_test.npy`, `nodeN_y_train.npy`, `nodeN_y_test.npy`
 
-Final dataset: **11 classes, ~2.8M samples**
+Final dataset: **11 classes, ~2.01M samples after cleaning**
 
 ---
 
